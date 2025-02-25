@@ -1,3 +1,4 @@
+-- 1432
 if IY_LOADED and not _G.IY_DEBUG == true then
     -- error("Infinite Yield is already running!", 0)
     return
@@ -289,7 +290,7 @@ SettingsButton.Parent = Holder
 SettingsButton.BackgroundTransparency = 1
 SettingsButton.Position = UDim2.new(0, 230, 0, 0)
 SettingsButton.Size = UDim2.new(0, 20, 0, 20)
-SettingsButton.Image = "rbxassetid://1204397029"
+SettingsButton.Image = "rbxassetid://135532403876867"
 SettingsButton.ZIndex = 10
 
 ReferenceButton = Instance.new("ImageButton")
@@ -298,7 +299,7 @@ ReferenceButton.Parent = Holder
 ReferenceButton.BackgroundTransparency = 1
 ReferenceButton.Position = UDim2.new(0, 212, 0, 2)
 ReferenceButton.Size = UDim2.new(0, 16, 0, 16)
-ReferenceButton.Image = "rbxassetid://3523243755"
+ReferenceButton.Image = "rbxassetid://109554169506020"
 ReferenceButton.ZIndex = 10
 
 Settings.Name = "Settings"
@@ -395,19 +396,19 @@ function makeSettingsButton(name,iconID,off)
 	return button
 end
 
-ColorsButton = makeSettingsButton("Edit Theme","rbxassetid://4911962991")
+ColorsButton = makeSettingsButton("Edit Theme","rbxassetid://79666124670494")
 ColorsButton.Position = UDim2.new(0,5,0,55)
 ColorsButton.Size = UDim2.new(1,-10,0,25)
 ColorsButton.Name = "Colors"
 ColorsButton.Parent = SettingsHolder
 
-Keybinds = makeSettingsButton("Edit Keybinds","rbxassetid://129697930")
+Keybinds = makeSettingsButton("Edit Keybinds","rbxassetid://72521136779099")
 Keybinds.Position = UDim2.new(0, 5, 0, 85)
 Keybinds.Size = UDim2.new(1, -10, 0, 25)
 Keybinds.Name = "Keybinds"
 Keybinds.Parent = SettingsHolder
 
-Aliases = makeSettingsButton("Edit Aliases","rbxassetid://5147488658")
+Aliases = makeSettingsButton("Edit Aliases","rbxassetid://88050770808150")
 Aliases.Position = UDim2.new(0, 5, 0, 115)
 Aliases.Size = UDim2.new(1, -10, 0, 25)
 Aliases.Name = "Aliases"
@@ -451,19 +452,19 @@ On.Text = ""
 On.TextColor3 = Color3.new(0, 0, 0)
 On.ZIndex = 10
 
-Positions = makeSettingsButton("Edit/Goto Waypoints","rbxassetid://5147488592")
+Positions = makeSettingsButton("Edit/Goto Waypoints","rbxassetid://118914331933564")
 Positions.Position = UDim2.new(0, 5, 0, 145)
 Positions.Size = UDim2.new(1, -10, 0, 25)
 Positions.Name = "Waypoints"
 Positions.Parent = SettingsHolder
 
-EventBind = makeSettingsButton("Edit Event Binds","rbxassetid://5147695474",759)
+EventBind = makeSettingsButton("Edit Event Binds","rbxassetid://114470772007716",759)
 EventBind.Position = UDim2.new(0, 5, 0, 205)
 EventBind.Size = UDim2.new(1, -10, 0, 25)
 EventBind.Name = "EventBinds"
 EventBind.Parent = SettingsHolder
 
-Plugins = makeSettingsButton("Manage Plugins","rbxassetid://5147695474",743)
+Plugins = makeSettingsButton("Manage Plugins","rbxassetid://114470772007716",743)
 Plugins.Position = UDim2.new(0, 5, 0, 175)
 Plugins.Size = UDim2.new(1, -10, 0, 25)
 Plugins.Name = "Plugins"
@@ -548,7 +549,7 @@ PinImage.BackgroundTransparency = 1
 PinImage.Position = UDim2.new(0, 3, 0, 3)
 PinImage.Size = UDim2.new(0, 14, 0, 14)
 PinImage.ZIndex = 10
-PinImage.Image = "rbxassetid://6234691350"
+PinImage.Image = "rbxassetid://83052008252654"
 
 Tooltip.Name = randomString()
 Tooltip.Parent = PARENT
@@ -606,7 +607,7 @@ Logo.BackgroundTransparency = 1
 Logo.BorderSizePixel = 0
 Logo.Position = UDim2.new(0, 125, 0, 127)
 Logo.Size = UDim2.new(0, 10, 0, 10)
-Logo.Image = "rbxassetid://1352543873"
+Logo.Image = "rbxassetid://122390610366060"
 Logo.ImageTransparency = 0
 Logo.ZIndex = 10
 
@@ -995,7 +996,7 @@ ExitImage_2.BackgroundTransparency = 1
 ExitImage_2.Position = UDim2.new(0, 5, 0, 5)
 ExitImage_2.Size = UDim2.new(0, 10, 0, 10)
 ExitImage_2.ZIndex = 10
-ExitImage_2.Image = "rbxassetid://5054663650"
+ExitImage_2.Image = "rbxassetid://120891364048098"
 
 PositionsFrame.Name = "PositionsFrame"
 PositionsFrame.Parent = Settings
@@ -1335,7 +1336,7 @@ Img.Parent = background_3
 Img.BackgroundTransparency = 1
 Img.Position = UDim2.new(0, 242, 0, 3)
 Img.Size = UDim2.new(0, 100, 0, 95)
-Img.Image = "rbxassetid://4113050383"
+Img.Image = "rbxassetid://129367458337060"
 Img.ZIndex = 10
 
 AddPlugin.Name = "AddPlugin"
@@ -1429,7 +1430,7 @@ ExitImage_3.BackgroundColor3 = Color3.new(1, 1, 1)
 ExitImage_3.BackgroundTransparency = 1
 ExitImage_3.Position = UDim2.new(0, 5, 0, 5)
 ExitImage_3.Size = UDim2.new(0, 10, 0, 10)
-ExitImage_3.Image = "rbxassetid://5054663650"
+ExitImage_3.Image = "rbxassetid://120891364048098"
 ExitImage_3.ZIndex = 10
 
 AliasHint.Name = "AliasHint"
