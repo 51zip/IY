@@ -1,4 +1,4 @@
--- 3250 | 4325
+-- 3250, 4325, 6375 (lastserver), 4748 (ls)
 if IY_LOADED and not _G.IY_DEBUG == true then
     -- error("Infinite Yield is already running!", 0)
     return
@@ -4745,6 +4745,7 @@ CMDs[#CMDs + 1] = {NAME = 'unctrllock', DESC = 'Re-binds Shiftlock to LeftShift'
 CMDs[#CMDs + 1] = {NAME = 'listento [player]', DESC = 'Listens to the area around a player. Can also eavesdrop with vc'}
 CMDs[#CMDs + 1] = {NAME = 'unlistento', DESC = 'Disables listento'}
 CMDs[#CMDs + 1] = {NAME = 'jerk', DESC = 'Makes you jork it'}
+CMDs[#CMDs + 1] = {NAME = 'lastserver / ls', DESC = 'Makesf'}
 wait()
 
 for i = 1, #CMDs do
@@ -6360,6 +6361,32 @@ addcmd('removealias',{},function(args, speaker)
 		refreshaliases()
 	end
 end)
+
+-- Guardar información del servidor actual cuando el jugador se va
+game:GetService("Players").PlayerRemoving:Connect(function(plr)
+    if plr == game.Players.LocalPlayer then
+        local currentServer = {
+            PlaceId = game.PlaceId,
+            JobId = game.JobId
+        }
+        writefile("lastServer.json", game:GetService('HttpService'):JSONEncode(currentServer))
+    end
+end)
+
+-- Comando para unirse al último servidor
+addcmd('lastserver', {'ls'}, function(args, speaker)
+    local success, lastServer = pcall(function()
+        return game:GetService('HttpService'):JSONDecode(readfile("lastServer.json"))
+    end)
+
+    if success and lastServer then
+        game:GetService("TeleportService"):TeleportToPlaceInstance(lastServer.PlaceId, lastServer.JobId, speaker)
+    else
+        notify("Last server could not be found.")
+    end
+end)
+
+-- Nota: Asegúrate de que la función `notify` esté definida en tu entorno.
 
 addcmd('clraliases',{},function(args, speaker)
 	customAlias = {}
