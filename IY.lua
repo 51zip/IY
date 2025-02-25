@@ -4745,7 +4745,7 @@ CMDs[#CMDs + 1] = {NAME = 'unctrllock', DESC = 'Re-binds Shiftlock to LeftShift'
 CMDs[#CMDs + 1] = {NAME = 'listento [player]', DESC = 'Listens to the area around a player. Can also eavesdrop with vc'}
 CMDs[#CMDs + 1] = {NAME = 'unlistento', DESC = 'Disables listento'}
 CMDs[#CMDs + 1] = {NAME = 'jerk', DESC = 'Makes you jork it'}
-CMDs[#CMDs + 1] = {NAME = 'lastserver / ls', DESC = 'Makesf'}
+CMDs[#CMDs + 1] = {NAME = 'lastserver / ls', DESC = 'Join the previous server you were in.'}
 wait()
 
 for i = 1, #CMDs do
