@@ -1,4 +1,3 @@
--- 3250, 4325, 6375 (lastserver), 4748 (ls)
 if IY_LOADED and not _G.IY_DEBUG == true then
     -- error("Infinite Yield is already running!", 0)
     return
